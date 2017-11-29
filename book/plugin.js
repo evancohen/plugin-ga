@@ -8,6 +8,7 @@ require(["gitbook"], function(gitbook) {
 
         var cfg = config.ga;
         ga('create', cfg.token, cfg.configuration);
+        ga('require', 'outboundLinkTracker', cfg.outbound);
     });
 
     // Notify pageview
